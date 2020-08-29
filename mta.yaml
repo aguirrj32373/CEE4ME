@@ -1,0 +1,15 @@
+ID: CEE_Jason_MTA
+_schema-version: '2.1'
+description: Test
+version: 0.0.1
+
+modules:
+ - name: CeeJasonWebApp
+   type: java
+   path: CeeJasonWebApp
+   parameters:
+      memory: 1024M
+   provides:
+    - name: CeeJasonWebApp_api
+      properties:
+         url: ${default-url}
